@@ -2,13 +2,13 @@ import xlrd
 import csv
 from datetime import datetime
 
-xl_file = "C:\Rahul\TestFile\Sample.xlsx"
+xl_file = "TestFile\Sample.xlsx"
 
 workbook = xlrd.open_workbook(xl_file)
 
 sheet = workbook.sheets()[0]
 
-csvname = "C:\Rahul\TestFile\Converted.csv"
+csvname = "TestFile\Converted.csv"
 cf = open(csvname, "w", newline='\n')
 cw = csv.writer(cf)
 
